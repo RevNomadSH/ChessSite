@@ -481,33 +481,37 @@ body {
     justify-content: center;
 }
 
-.contact-form {
-    width: 530px;
-    height: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    background: var(--main-color);
-    border-radius:32px;
-}
 
-.contact-form p{
-    font-size: 12px;
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 65px;
+    grid-template-rows: repeat(2, auto) 1fr;
+    gap: 5px;
+    background:  var(--main-color);
+    padding: 30px 70px;
+    border-radius: 32px;
+    width: 400px;
+    align-items: center;
 }
-
-.contact-form input {
-    width: 300px;
+.form-container input {
+    font-size: 16px;
     padding: 15px 30px;
-    border: 1px solid #8c4a2f;
+    border: none;
     border-radius: 32px;
 }
-
-.submit-button {
+.form-container button {
+    grid-row: 1 / span 2;
+    grid-column: 2;
     background: var(--text-color);
-    border: none;
+    width: 96px;
+    aspect-ratio: 1/1;
     padding: 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 16px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .submit-button span{
@@ -515,6 +519,14 @@ body {
     background: url(../images/RightCoin.svg);
     width: 20px;
     height: 40px;
+}
+
+.disclaimer {
+    grid-column: 1 / span 2;
+    font-size: 12px;
+    color: #E4DACF;
+    text-align: center;
+    padding: 5px 10px;
 }
 
 .reviews {
@@ -617,6 +629,39 @@ footer {
     padding: 20px 0;
     text-align: center;
     color: #fff;
+}
+
+.Contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactQuestions{
+    text-align: start;
+}
+
+.contactTelegram{
+    background: var(--bg-color);
+    width: 289px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    border-radius: 32px;
+    gap: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contactTelegram p{
+    color: var(--text-color);
+}
+
+.contactTelegram a{
+    display: block;
+    background: url(../images/TelegramMentor.svg) no-repeat;
+    width: 20px;
+    aspect-ratio: 1 / 1;
 }
 
 /* Footer */
