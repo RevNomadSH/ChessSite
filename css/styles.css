@@ -632,6 +632,10 @@ footer {
     color: #fff;
 }
 
+footer hr{
+    border: 1px solid var(--text-color);
+}
+
 .Contact{
     display: flex;
     justify-content: space-between;
