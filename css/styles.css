@@ -529,6 +529,8 @@ body {
     padding: 5px 10px;
 }
 
+
+
 .reviews {
     display: flex;
     justify-content: center;
@@ -634,7 +636,6 @@ footer {
 .Contact{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .contactQuestions{
@@ -646,6 +647,7 @@ footer {
     width: 289px;
     height: 60px;
     display: flex;
+    flex-wrap: wrap;
     border: 1px solid;
     border-radius: 32px;
     gap: 15px;
@@ -659,7 +661,7 @@ footer {
 
 .contactTelegram a{
     display: block;
-    background: url(../images/TelegramMentor.svg) no-repeat center/cover;
+    background: url(../images/TelegramMentor.svg) no-repeat;
     width: 20px;
     aspect-ratio: 1 / 1;
 }
@@ -671,3 +673,163 @@ footer {
 /*    background: var(--primary-color);*/
 /*    color: white;*/
 /*}*/
+
+
+/*
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <style>
+        body {
+            background: #b8652b;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .shop-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .shop-categories {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .category {
+            background: #d89b5b;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 1rem;
+        }
+        .category.active {
+            background: #f4c08f;
+        }
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, auto);
+            gap: 20px;
+            justify-items: center;
+        }
+        .product {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+        }
+        .product-image {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product-name {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+        .product-price {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0;
+        }
+        .buy-button, .cart-button {
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            width: 100px;
+        }
+        .buy-button {
+            background: #f4c08f;
+            color: black;
+        }
+        .cart-button {
+            background: #d89b5b;
+            color: white;
+        }
+        .pagination {
+            margin-top: 30px;
+        }
+        .page {
+            background: #d89b5b;
+            border: none;
+            padding: 8px 12px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .page.active {
+            background: #f4c08f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="shop-title">Магазин</h2>
+        <div class="shop-categories">
+            <button class="category active">Аксессуары</button>
+            <button class="category">Шахматные наборы</button>
+            <button class="category">Книги</button>
+        </div>
+        <div class="shop-grid">
+            <div class="product">
+                <img src="images/ChessBoard.png" alt="product image" class="product-image">
+                <p class="product-name">Шахматная доска</p>
+                <span class="product-price">3 350 ₽</span>
+                <button class="buy-button">Купить</button>
+            </div>
+            <div class="product">
+                <img src="images/PerspectivBoard.png" alt="product image" class="product-image">
+                <p class="product-name">Шахматный набор</p>
+                <span class="product-price">3 350 ₽</span>
+                <button class="buy-button">Купить</button>
+            </div>
+            <div class="product">
+                <img src="images/ChessBoardCut.png" alt="product image" class="product-image">
+                <p class="product-name">Шахматная доска с фигурами</p>
+                <span class="product-price">3 350 ₽</span>
+                <button class="cart-button">В корзине</button>
+            </div>
+            <div class="product">
+                <img src="images/ChessBoardBright.png" alt="product image" class="product-image">
+                <p class="product-name">Классические шахматы</p>
+                <span class="product-price">3 350 ₽</span>
+                <button class="buy-button">Купить</button>
+            </div>
+            <div class="product">
+                <img src="images/ChessSet.png" alt="product image" class="product-image">
+                <p class="product-name">Шахматный комплект</p>
+                <span class="product-price">3 350 ₽</span>
+                <button class="buy-button">Купить</button>
+            </div>
+            <div class="product">
+                <img src="images/ChessGlass.png" alt="product image" class="product-image">
+                <p class="product-name">Стеклянные шахматы</p>
+                <span class="product-price">3 350 ₽</span>
+                <button class="cart-button">В корзине</button>
+            </div>
+        </div>
+        <div class="pagination">
+            <button class="page active">1</button>
+            <button class="page">2</button>
+            <button class="page">3</button>
+            <span class="dots">...</span>
+            <button class="page">9</button>
+        </div>
+    </div>
+</body>
+</html>
+
+*/
