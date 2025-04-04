@@ -634,6 +634,7 @@ footer {
 .Contact{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contactQuestions{
@@ -645,7 +646,6 @@ footer {
     width: 289px;
     height: 60px;
     display: flex;
-    flex-wrap: wrap;
     border: 1px solid;
     border-radius: 32px;
     gap: 15px;
