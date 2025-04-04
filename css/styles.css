@@ -629,7 +629,6 @@ body {
 footer {
     background: var(--main-color);
     padding: 20px 0;
-    text-align: center;
     color: #fff;
 }
 
