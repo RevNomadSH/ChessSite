@@ -625,7 +625,7 @@ body {
 
 /* Footer */
 footer {
-    background: #2c3e50;
+    background: var(--main-color);
     padding: 20px 0;
     text-align: center;
     color: #fff;
@@ -659,7 +659,7 @@ footer {
 
 .contactTelegram a{
     display: block;
-    background: url(../images/TelegramMentor.svg) no-repeat;
+    background: url(../images/TelegramMentor.svg) no-repeat center/cover;
     width: 20px;
     aspect-ratio: 1 / 1;
 }
