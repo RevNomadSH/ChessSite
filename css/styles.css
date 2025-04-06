@@ -331,7 +331,7 @@ body {
 }
 
 .shop-title {
-    font-size: 2rem;
+    font-size: 96px;
     color: #fff;
 }
 
@@ -348,15 +348,20 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 10px;
+    font-size: 24px;
+    font-family: "LINESeed Sans", sans-serif;
 }
 
 .category.active {
+    font-size: 24px;
     background: #f4c08f;
+    font-family: "LINESeed Sans", sans-serif;
 }
 
 .shop-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
     gap: 20px;
     justify-items: center;
 }
@@ -668,6 +673,48 @@ footer hr{
     background: url(../images/TelegramMentor.svg) no-repeat;
     width: 20px;
     aspect-ratio: 1 / 1;
+}
+
+.footerDisclaimer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.socialMediaFooter{
+    column-gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linksFooter{
+    column-gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linksFooter a{
+    color: var(--bg-color);
+}
+
+.vkFooter{
+    display: block;
+    width: 24px;
+    aspect-ratio: 1/1;
+    background: url('../images/VkFooter.svg') no-repeat center;
+}
+
+.TelegramFooter{
+    display: block;
+    width: 24px;
+    aspect-ratio: 1/1;
+    background: url('../images/TelegrammFooter.svg')no-repeat center;
+}
+
+.footer-OtherInfo{
+    max-width: 654px;
 }
 
 /* Footer */
