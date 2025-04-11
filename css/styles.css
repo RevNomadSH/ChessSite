@@ -74,7 +74,10 @@ body {
 }
 
 .hero h1 {
+    font-family: "Lora", serif;
     font-size: 96px;
+    font-weight: bold;
+    padding: 0 160px;
     margin: 0;
 }
 
@@ -84,14 +87,17 @@ body {
     backdrop-filter: blur(100px);
     font-size: 16px;
     max-width: 380px;
-    margin: 0 auto 20px;
+    margin: -30px auto 20px;
     border-radius: 32px;
 }
 
 .socialMedia{
+    position: relative;
     column-gap: 12px;
     display: flex;
     justify-content: center;
+    margin-top: -30px;
+    z-index: 1;
 }
 
 .telegram{
@@ -118,11 +124,14 @@ body {
 .btn {
     display: inline-block;
     margin-top: 125px;
-    padding: 10px 20px;
-    background: var(--accent-color);
-    color: white;
+    padding: 20px 100px;
+    background: linear-gradient(90deg, #EEAA6C 0%, #BA7125 49%, #A15A19 100%);
+    color: var(--bg-color);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 52px;
+    font-size: 36px;
+    font-family: "Geologica", sans-serif;
+    font-style: italic;
 }
 
 .subscribe-slider {
@@ -285,25 +294,38 @@ body {
     color: white;
     font-size: 24px;
 }
-.tags span {
-    display: inline-block;
-    background: white;
-    color: #d17b45;
-    margin: 5px;
-    border-radius: 5px;
-}
-.levels {
+
+.tags{
+    max-width: 900px;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
+    margin-bottom: 25px;
 }
+
+
+.tags span {
+    background: white;
+    color: #d17b45;
+    border-radius: 32px;
+    padding: 25px 40px;
+}
+.levels {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.offer-block_tags{
+    background: var(--main-color);
+    padding: 20px;
+    border-radius: 32px;
+}
+
+
 .offer-block {
     background: var(--main-color);
     padding: 20px;
     border-radius: 32px;
-    width: 30%;
-    min-width: 250px;
     text-align: center;
 }
 .offer-block h2 {
@@ -315,13 +337,14 @@ body {
     padding: 20px;
     border-radius: 32px;
     border: 2px solid var(--main-color);
-    width: 30%;
-    min-width: 250px;
     text-align: center;
 }
-
-.offerDescription h4{
-
+.offer-block_Mid{
+    background: var(--main-color);
+    padding: 20px;
+    border-radius: 32px;
+    text-align: center;
+    grid-column: 1 / span 2;
 }
 
 .shop {
@@ -338,8 +361,6 @@ body {
 .shop-categories {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
 }
 
 .category {
