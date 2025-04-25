@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир Шахмат</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,
+    wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body>
+
+<!-- 🔹 Header -->
+<header class="header">
+    <nav class="header__nav">
+        <button class="burger-toggle" id="burger-menu-toggle">Меню</button>
+
+        <!-- Контейнер меню -->
+        <div class="burger-menu" id="burger-menu">
+            <button class="close-burger">&times;</button>
+            <ul>
+                <li><a href="#Education">Обучение</a></li>
+                <li><a href="#Shop">Магазин</a></li>
+                <li><a href="#Subscribe_Blog">Блог</a></li>
+                <li><a href="#Contacts">Контакты</a></li>
+            </ul>
+        </div>
+        <ul class="header__nav-menu">
+            <li>
+                <a href="#Education">Обучение</a>
+            </li>
+            <li>
+                <a href="#Shop">Магазин</a>
+            </li>
+            <li>
+                <a href="#Subscribe_Blog">Блог</a>
+            </li>
+            <li>
+                <a href="#Contacts">Контакты</a>
+            </li>
+        </ul>
+        <div class="header__nav-logo">
+            <div class="header__nav-icon">
+                <span class="header__nav-cart-count">В корзине 7 товаров</span>
+                <img src="images/icons/chess.svg" alt="Chess">
+                <img class="cart" src="images/icons/cart.svg" alt="cart">
+            </div>
+            <span>Luty Chess</span>
+        </div>
+        <div class="header__nav-auth">
+            <button id='Registration'>Регистрация</button>
+            <button id='EnterAccount'>Вход</button>
+        </div>
+        <div class="burger-auth-toggle" id="burger-auth-toggle">
+            <img src="images/icons/UserMenuAuth.svg" alt="Профиль">
+        </div>
+
+        <!-- Меню авторизации -->
+        <div class="burger-auth-menu" id="burger-auth-menu">
+            <button class="close-burger">Выход</button>
+            <button id="EnterAccountMobile">Вход</button>
+            <button id="EnterAccountMobileReg">Регистрация</button>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="hero__wrap">
+                <h1 class="hero__title">Добро пожаловать в мир шахмат!</h1>
+                <p class="hero__info">
+                    Наш сайт - ваш путеводитель в мир шахмат! Узнайте правила, отточите навыки,
+                    найдите новых соперников
+                    и погружайтесь в мир интеллектуальных игр!
+                </p>
+                <ul class="hero__social">
+                    <li>
+                        <a href="#">
+                            <img src="images/icons/telegram.svg" alt="Telegram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/icons/vk.svg" alt="VK">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/icons/wa.svg" alt="WhatsApp">
+                        </a>
+                    </li>
+                </ul>
+                <button class="hero__btn" id="star-button"><span>Связаться</span></button>
+            </div>
+        </div>
+    </section>
+    <section id ="Subscribe_Blog" class="blog">
+        <div class="container">
+            <div class="blog__wrap">
+                <div class="blog__info-wrap">
+                    <div class="blog__info">
+                        <h2>Подпишись на блог наставника и ты узнаешь</h2>
+                        <p>Cамые свежие новости, стратегии, историю шахмат. Будь в курсе грядущих турниров и просто получай
+                            хорошее настроение</p>
+                        <div class="swiper-button-next">
+                            <button>
+                                <img src="images/icons/RightCoin.svg" alt="Next button">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper blog__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide blog__slider-item">
+                            <img src="images/Slider-Subscribe/slide-1.jpg" alt="Slide 1">
+                            <span>Самые свежие новости</span>
+                        </div>
+                        <div class="swiper-slide blog__slider-item">
+                            <img src="images/Slider-Subscribe/slide-2.jpg" alt="Slide 2">
+                            <span>Новые стратегии</span>
+                        </div>
+                        <div class="swiper-slide blog__slider-item">
+                            <img src="images/Slider-Subscribe/slide-3.jpg" alt="Slide 3">
+                            <span>Историю. Победы и поражения</span>
+                        </div>
+                        <div class="swiper-slide blog__slider-item">
+                            <img src="images/Slider-Subscribe/slide-5.jpg" alt="Slide 5">
+                            <span>Самые свежие новости</span>
+                        </div>
+                        <div class="swiper-slide blog__slider-item">
+                            <img src="images/Slider-Subscribe/slide-4.jpg" alt="Slide 4">
+                            <span>Информацию о грядущих турнирах</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id ="Education" class="content">
+        <div class="container">
+            <div class="intro">
+                <div class="tags">
+                    <span class="tag active">Мы предлагаем</span>
+                    <span class="tag">Обучение до уровня PRO</span>
+                    <span class="tag">Статистика</span>
+                    <span class="tag">Разборы сложных стратегий</span>
+                    <span class="tag">Турниры</span>
+                    <span class="tag">И это не всё</span>
+                </div>
+            </div>
+            <div class="levels">
+                <div class="offer-block_tags">
+                    <h2>Чему мы учим на наших занятиях</h2>
+                    <div class="offer_tags">
+                        <span class="offer-tag">В режиме Pro</span>
+                        <span class="offer-tag">В режиме Middle</span>
+                        <span class="offer-tag">В режиме Junior</span>
+                    </div>
+                </div>
+                <div class="offerDescriptionBlock">
+                    <h4>Про</h4>
+                    <p>Bilge schooner fleet fathom hogshead coffer anchor.
+                        Gabion hands spot hands pinnace bilged brig overhaul bow.
+                        Pirate yer aye shot blimey jones' coffer. Brig gangway fer shiver salmagundi.</p>
+                </div>
+                <div class="offerDescriptionBlock">
+                    <h4>Про</h4>
+                    <p>Bilge schooner fleet fathom hogshead coffer anchor.
+                        Gabion hands spot hands pinnace bilged brig overhaul bow.
+                        Pirate yer aye shot blimey jones' coffer. Brig gangway fer shiver salmagundi.</p>
+                </div>
+                <div class="offer-block" id="proBlock">
+                    <a href="#Pricing">Про</a>
+                </div>
+                <div class="offerDescriptionBlock">
+                    <h4>Про</h4>
+                    <p>Bilge schooner fleet fathom hogshead coffer anchor.
+                        Gabion hands spot hands pinnace bilged brig overhaul bow.
+                        Pirate yer aye shot blimey jones' coffer. Brig gangway fer shiver salmagundi.</p>
+                </div>
+                <div class="offerDescriptionBlock">
+                    <h4>Про</h4>
+                    <p>Bilge schooner fleet fathom hogshead coffer anchor.
+                        Gabion hands spot hands pinnace bilged brig overhaul bow.
+                        Pirate yer aye shot blimey jones' coffer. Brig gangway fer shiver salmagundi.</p>
+                </div>
+                <div class="offer-block_Mid">
+                    <a href="#Pricing">Средний Уровень</a>
+                </div>
+                <div class="offerDescriptionBlock">
+                    <h4>Средний Уровень</h4>
+                    <p>Bilge schooner fleet fathom hogshead coffer anchor.
+                        Gabion hands spot hands pinnace bilged brig overhaul bow.
+                        Pirate yer aye shot blimey jones' coffer. Brig gangway fer shiver salmagundi.</p>
+                </div>
+                <div class="offerDescriptionBlock">
+                    <h4>Средний Уровень</h4>
+                    <p>Bilge schooner fleet fathom hogshead coffer anchor.
+                        Gabion hands spot hands pinnace bilged brig overhaul bow.
+                        Pirate yer aye shot blimey jones' coffer. Brig gangway fer shiver salmagundi.</p>
+                </div>
+                <div class="offer-block">
+                    <a href="#Pricing">Новичок</a>
+                </div>
+                <div class="offerDescriptionBlock">
+                    <h4>Новичок</h4>
+                    <p>Bilge schooner fleet fathom hogshead coffer anchor.
+                        Gabion hands spot hands pinnace bilged brig overhaul bow.
+                        Pirate yer aye shot blimey jones' coffer. Brig gangway fer shiver salmagundi.</p>
+                </div>
+                <div class="offerDescriptionBlock">
+                    <h4>Новичок</h4>
+                    <p>Bilge schooner fleet fathom hogshead coffer anchor.
+                        Gabion hands spot hands pinnace bilged brig overhaul bow.
+                        Pirate yer aye shot blimey jones' coffer. Brig gangway fer shiver salmagundi.</p>
+                </div>
+                <div class="offerDescriptionBlock">
+                    <h4>Новичок</h4>
+                    <p>Bilge schooner fleet fathom hogshead coffer anchor.
+                        Gabion hands spot hands pinnace bilged brig overhaul bow.
+                        Pirate yer aye shot blimey jones' coffer. Brig gangway fer shiver salmagundi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training -->
+    <section id ="Shop" class="shop">
+        <div class="container">
+            <h1 class="shop-title">Магазин</h1>
+            <div class="shop-categories">
+                <button class="category active">Аксессуары</button>
+                <button class="category">Шахматные наборы</button>
+                <button class="category">Книги</button>
+            </div>
+            <div class="shop-grid">
+                <div class="product">
+                    <img src="images/Shop-Images/ChessBoard.png" alt="product image" class="product-image">
+                    <div class="product-info">
+                        <div class="product-footer">
+                            <p class="product-name">Bilge schooner fleet fathom hogshead coffer anchor.</p>
+                            <div class="panel-price">
+                                <span class="product-price">3 350 ₽</span>
+                                <button class="buy-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/Shop-Images/PerspectivBoard.png" alt="product image" class="product-image">
+                    <div class="product-info">
+                        <div class="product-footer">
+                            <p class="product-name">Bilge schooner fleet fathom hogshead coffer anchor.</p>
+                            <div class="panel-price">
+                                <span class="product-price">3 350 ₽</span>
+                                <button class="buy-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/Shop-Images/ChessBoardCut.png" alt="product image" class="product-image">
+                    <div class="product-info">
+                        <div class="product-footer">
+                            <p class="product-name">Bilge schooner fleet fathom hogshead coffer anchor.</p>
+                            <div class="panel-price">
+                                <button class="cart-button">В корзине</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/Shop-Images/ChessBoardBright.png" alt="product image" class="product-image">
+                    <div class="product-info">
+                        <div class="product-footer">
+                            <p class="product-name">Bilge schooner fleet fathom hogshead coffer anchor.</p>
+                            <div class="panel-price">
+                                <span class="product-price">3 350 ₽</span>
+                                <button class="buy-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/Shop-Images/ChessBoardBright.png" alt="product image" class="product-image">
+                    <div class="product-info">
+                        <div class="product-footer">
+                            <p class="product-name">Bilge schooner fleet fathom hogshead coffer anchor.</p>
+                            <div class="panel-price">
+                                <span class="product-price">3 350 ₽</span>
+                                <button class="buy-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/Shop-Images/ChessBoardBright.png" alt="product image" class="product-image">
+                    <div class="product-info">
+                        <div class="product-footer">
+                            <p class="product-name">Bilge schooner fleet fathom hogshead coffer anchor.</p>
+                            <div class="panel-price">
+                                <span class="product-price">3 350 ₽</span>
+                                <button class="buy-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <button class="page active">1</button>
+                <button class="page">2</button>
+                <button class="page">3</button>
+                <span class="dots">...</span>
+                <button class="page">9</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id = "Pricing" class="pricing">
+        <div class="container">
+            <h2 class="pricing-title">Цены</h2>
+            <div class="pricing-grid">
+                <div class="pricing-plan" onclick="selectPlan(this)">
+                    <span>Абонимент</span>
+                    <h2 class="plan-title">Старт</h2>
+                    <article>
+                        Всё, что в Тактической подготовке, а также:
+                    </article>
+                    <ul>
+                        <li>
+                            Обучение основам шахмат: правила игры, обозначения фигур, основные тактические приемы.
+                        </li>
+                        <li>
+                            Развитие базовых шахматных навыков: ходы фигур, взятие фигур, шахи, мат.
+                        </li>
+                        <li>
+                            Игры с тренером для закрепления пройденного материала.
+                        </li>
+                    </ul>
+                    <p class="plan-description">
+                        (8 уроков):  60-минутные уроки: 1200р/урок (скидка 20% при покупке пакета из 8 уроков) = 960р/урок
+                        40-минутные уроки: 990р/урок (скидка 20% при покупке пакета из 8 уроков) = 792р/урок
+                        25-минутные уроки: 600р/урок (скидка 20% при покупке пакета из 8 уроков) = 480р/урок
+                    </p>
+                    <button class="plan-button">Выбрать план</button>
+                </div>
+                <div class="pricing-plan" onclick="selectPlan(this)">
+                    <span>Абонимент</span>
+                    <h2 class="plan-title">Стратегическое мастерство</h2>
+                    <article>
+                        Всё, что в Тактической подготовке, а также:
+                    </article>
+                    <ul>
+                        <li>
+                            Персональная программа обучения, разработанная индивидуально под ваши цели
+                        </li>
+                        <li>
+                            Доступ к закрытому чату с тренером для постоянной обратной связи.
+                        </li>
+                        <li>
+                            Две разминочные партии с тренером на каждом занятии (10-15 минут).
+                        </li>
+                    </ul>
+                    <p class="plan-description">
+                        Разбор партий – встроен в процесс обучения, более углубленный, чем в среднем уровне.
+                        Подготовка к турнирам: анализ предстоящих и прошедших партий, разработка стратегии игры, тренировка в условиях, приближенных к турнирным.
+                        40-минутные уроки: 1900р/урок (скидка 20% при покупке пакета из 8 уроков) = 1520р/урок  60-минутные уроки: 2300р/урок (скидка 20% при покупке пакета из 8 уроков) = 1840р/урок
+                        Выбрать план.</p>
+                    <button class="plan-button">Выбрать план</button>
+                </div>
+                <div class="pricing-plan" onclick="selectPlan(this)">
+                    <span>Абонимент</span>
+                    <h2 class="plan-title">Тактическая подготовка</h2>
+                    <article>
+                        Всё, что в Старте, а также:
+                    </article>
+                    <ul>
+                        <li>
+                            Доступ к онлайн-базе видеоуроков (основы тактики, комбинаций, типичных ошибок) - 15 видеоуроков.  Разбор партий – встроен в процесс обучения (не на каждом занятии)
+                        </li>
+                        <li>
+                            Одна разминочная партия с тренером на каждом занятии (5-10 минут).
+                        </li>
+                        <li>
+                            Разбор партий – встроен в процесс обучения, более углубленный, чем в среднем уровне.  Подготовка к турнирам: анализ предстоящих и прошедших партий, разработка стратегии игры, тренировка в условиях, приближенных к турнирным.
+                        </li>
+                    </ul>
+                    <p class="plan-description">
+                        30-минутные уроки: 1000р/урок (скидка 20% при покупке пакета из 8 уроков) = 800р/урок
+                        40-минутные уроки: 1300р/урок (скидка 20% при покупке пакета из 8 уроков) = 1040р/урок  60-минутные уроки: 1600р/урок (скидка 20% при покупке пакета из 8 уроков) = 1280р/урок
+                        Выбрать план</p>
+                    <button class="plan-button">Выбрать план</button>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form action="#" class="form-container">
+                    <input type="text" placeholder="Имя">
+                    <input type="tel" placeholder="+7 (900) 300 30 30">
+                    <button class="submit-button"><span></span></button>
+                    <div class="disclaimer">Нажимая на кнопку, вы подтверждаете своё согласие на обработку персональных данных</div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews -->
+    <section id = "Reviews" class="reviews">
+        <div class="container">
+            <div class="reviews-container">
+                <div class="reviews-info">
+                    <div class="reviews-containerTitle">
+                        <h2 class="reviews-title">Отзывы</h2>
+                        <p class="reviews-subtitle">Pirate ipsum argh bounty warp jack.</p>
+                    </div>
+                    <p class="reviews-subtitleSecond">Bilge schooner fleet fathom hogshead coffer anchor.
+                        Gabion hands spot hands pinnace bilged brig overhaul bow.
+                        Pirate yer aye shot blimey jones' coffer.</p>
+                </div>
+                <hr>
+                <div class="swiper reviews-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="reviews-slide swiper-slide">
+                            <article>2 года обучения</article>
+                            <span>2</span>
+                            <h2 class="review-author">Андрей Савин</h2>
+                            <p class="review-text">Отличный клуб!
+                                Я начал с нуля и теперь уверенно играю насреднем уровне.
+                                Преподаватели очень внимательные и всегда готовы помочь.
+                                Рекомендую всем новичкам!</p>
+                        </div>
+                        <div class="reviews-slide swiper-slide">
+                            <article>2 года обучения</article>
+                            <span>2</span>
+                            <h2 class="review-author">Дмитрий</h2>
+                            <p class="review-text">PRO курс просто великолепен!
+                                Индивидуальный подход и глубокий анализ партий помогли мне значительно улучшить
+                                свои результаты на турнирах</p>
+                        </div>
+                        <div class="reviews-slide swiper-slide">
+                            <article>2 года обучения</article>
+                            <span>2</span>
+                            <h2 class="review-author">Марина</h2>
+                            <p class="review-text">Занимался в MID группе, и это было потрясающе!
+                                Много полезной информации и практики.
+                                Единственное, хотелось бы больше занятий в пакете.</p>
+                        </div>
+                        <div class="reviews-slide swiper-slide">
+                            <article>2 года обучения</article>
+                            <span>2</span>
+                            <h2 class="review-author">Андрей Савин</h2>
+                            <p class="review-text">Bilge schooner fleet fathom hogshead coffer anchor.
+                                Gabion hands spot hands pinnace bilged brig overhaul bow.
+                                Pirate yer aye shot blimey jones' coffer.
+                                Brig gangway fer shiver salmagundi.</p>
+                        </div>
+                        <div class="reviews-slide swiper-slide">
+                            <article>2 года обучения</article>
+                            <span>2</span>
+                            <h2 class="review-author">Андрей Савин</h2>
+                            <p class="review-text">Bilge schooner fleet fathom hogshead coffer anchor.
+                                Gabion hands spot hands pinnace bilged brig overhaul bow.
+                                Pirate yer aye shot blimey jones' coffer.
+                                Brig gangway fer shiver salmagundi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ -->
+    <section id = "FAQ" class="faq">
+        <div class="container">
+            <div class="faqTable">
+                <h2 class="faq-title">FAQ</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <p class="faq-question">Как записаться на занятия?</p>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <p class="faq-answer">Вы можете записаться на занятия через наш сайт,
+                            заполнив форму регистрации, или позвонив по указанному номеру телефона.  </p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <p class="faq-question">Можно ли пропустить занятие и посетить его позже?</p>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <p class="faq-answer">Да, вы можете перенести занятие на более удобное время, если предупредите нас заранее.</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <p class="faq-question">Есть ли скидки для студентов или пенсионеров?</p>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <p class="faq-answer">Да, мы предлагаем скидки для студентов и пенсионеров.
+                        Пожалуйста свяжитесь с нами для получения более подробной информации</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <p class="faq-question">Какой возрастной диапазон для занятий?</p>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <p class="faq-answer">Наши занятия подходят для всех возрастов, начиная с 6 лет.
+                        Мы формируем группы в зависимости от уровня подготовки и возраста.</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <p class="faq-question">Можно ли заниматься индивидуально?</p>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <p class="faq-answer">Да, у нас есть возможность индивидуальных занятий.
+                        Пожалуйста, свяжитесь с нами для обсуждения деталей и стоимости </p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <p class="faq-question">Какой уровень подготовки нужен для записи на MID или PRO курс?</p>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <p class="faq-answer">Для MID курса желательно иметь базовые знания шахмат,
+                            а для PRO курса - уверенное владение стратегиями и тактиками </p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <p class="faq-question">Предоставляете ли вы материалы для обучения?</p>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <p class="faq-answer">Да, все необходимые материалы предоставляются в электронном виде.
+                        Также у нас есть библиотека шахматной литературы</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <p class="faq-question">Как часто проходят занятия?</p>
+                            <span class="faq-icon"></span>
+                        </div>
+                        <p class="faq-answer">Занятия проходят два раза в неделю.
+                            Вы можете выбрать удобные для вас дни и время из предложенных Вариантов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Footer -->
+<footer id ="Contacts">
+    <div class="container">
+        <div class="Contact">
+            <div class ="contactQuestions">
+                <h2 class="contact-title">Остались вопросы?</h2>
+                <p class="contact-text">Pirate ipsum argh bounty warp jack.</p>
+            </div>
+            <div class="contactTelegram">
+                <img src="images/Static/MentorAvatar.png" alt="Mentor's foto">
+                <p>Написать ментору</p>
+                <a href="#"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footerDisclaimer">
+            <div class="socialMediaFooter">
+                <p>@ bilged brig 2024</p>
+                <a href="#" class="TelegramFooter"></a>
+                <a href="#" class="vkFooter"></a>
+            </div>
+            <div class="linksFooter">
+                <a href="#">fer shiver salmagundi.</a>
+                <a href="#">fer shiver salmagundi.</a>
+                <a href="#">fer shiver salmagundi.</a>
+            </div>
+        </div>
+        <p class="footer-OtherInfo">Bilge schooner fleet fathom hogshead coffer anchor.
+            Gabion hands spot hands pinnace bilged brig overhaul bow.
+            Pirate yer aye shot blimey jones' coffer. Brig gangway fer shiver salmagundi.</p>
+    </div>
+</footer>
+<div class="modal-overlay" id="hero-modal">
+    <div class="modal-form-container">
+        <div class="modal-text-container">
+            <p class="modal-text">Привет! Оставь контакты и тренер скоро свяжется с тобой.</p>
+        </div>
+        <form class="grid-container">
+            <input type="text" placeholder="Имя">
+            <input type="email" placeholder="Email">
+            <button class="submit-button"><span></span></button>
+            <p class="disclaimer">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+        </form>
+    </div>
+</div>
+<div class="modal-overlay" id='auth-modal'>
+    <div class="modal-form-container">
+        <div class="modal-text-container">
+            <p class="modal-text-error">Упс! Эта функция временно недоступна.
+                Оставьте контакты и наш специалист поможет вам подобрать план обучения</p>
+        </div>
+        <form class="grid-container">
+            <input type="text" placeholder="Имя">
+            <input type="email" placeholder="Email">
+            <button class="submit-button"><span></span></button>
+            <p class="disclaimer">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+        </form>
+    </div>
+</div>
+<script src="js/ActionPonts.js"></script>
+<script src="js/stars.js"></script>
+<script src="js/Price-Plan.js"></script>
+<script src="js/answersQuestions.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/Swiper-Reviews.js"></script>
+<script src="js/Swiper-Blog.js"></script>
+<script src="js/burger.js"></script>
+</body>
+</html>
