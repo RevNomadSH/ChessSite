@@ -186,7 +186,7 @@ h1 , h2, h3, h4 {
     background-image: url("../images/Static/Main.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    height: 140vh;
 }
 .hero .container {
     height: 100%;
