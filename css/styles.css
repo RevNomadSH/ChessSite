@@ -1315,6 +1315,7 @@ footer hr{
     .hero__info {
         padding: 20px 30px;
         font-size: 14px;
+        margin-top: -12px;
     }
 
     /* Блок обучения */
